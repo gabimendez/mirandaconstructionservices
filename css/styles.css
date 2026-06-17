@@ -1,0 +1,399 @@
+/* ==========================================================================
+   styles.css — component styling
+   ========================================================================== */
+
+/* ---------- Header ---------- */
+.headerTop {
+	background: var(--black);
+	color: var(--white);
+}
+
+.top {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 8px 24px;
+	font-size: 0.85rem;
+	font-family: var(--font-body);
+}
+
+.top h1 {
+	font-size: 0.85rem;
+	font-weight: 400;
+}
+
+.top__icon,
+.top__icon-contact {
+	margin-right: 6px;
+}
+
+.top__contact a {
+	background: var(--red);
+	padding: 6px 14px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+.nav {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 24px;
+}
+
+.nav__text {
+	font-family: var(--font-heading);
+	font-size: 1.4rem;
+}
+
+.nav__text a {
+	text-decoration: none;
+}
+
+.nav__text--construction {
+	color: var(--red);
+}
+
+.nav__links {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.nav__link {
+	text-decoration: none;
+	font-family: var(--font-heading);
+	font-size: 0.85rem;
+	letter-spacing: 0.5px;
+	color: var(--black);
+}
+
+.nav__link--square {
+	background: var(--red);
+	color: var(--white);
+	padding: 8px 16px;
+	border-radius: 4px;
+}
+
+.nav__close,
+.nav__img-menu {
+	display: none;
+	width: 28px;
+	cursor: pointer;
+}
+
+.nav__menu {
+	display: none;
+}
+
+.nav__info {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.nav_phone {
+	color: var(--red);
+}
+
+.nav__question {
+	font-size: 0.75rem;
+	color: var(--gray);
+	font-weight: 400;
+}
+
+.nav_cel {
+	font-family: var(--font-heading);
+	font-size: 1rem;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 32px;
+	padding: 48px 24px;
+}
+
+.hero__description {
+	flex: 1;
+	min-width: 280px;
+}
+
+.hero__principal {
+	font-family: var(--font-heading);
+	color: var(--red);
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+
+.hero__title {
+	font-family: var(--font-heading);
+	font-size: 2.5rem;
+	margin-bottom: 16px;
+}
+
+.hero__message {
+	font-size: 1rem;
+	color: var(--gray);
+	max-width: 500px;
+}
+
+.hero__image {
+	flex: 1;
+	min-width: 280px;
+	text-align: center;
+}
+
+.hero__logo {
+	max-width: 320px;
+	margin: 0 auto;
+}
+
+/* ---------- Slider card ---------- */
+.swiffy-slider {
+	padding: 24px;
+	border-radius: 8px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card {
+	border: none;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+/* ---------- Trusted by ---------- */
+.trustedby {
+	text-align: center;
+	padding: 32px 24px;
+	font-family: var(--font-heading);
+	color: var(--gray);
+	letter-spacing: 1px;
+}
+
+/* ---------- Offer section ---------- */
+.offer {
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 48px 24px 24px;
+}
+
+.offer__principal {
+	font-family: var(--font-heading);
+	color: var(--red);
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+
+.offer__title {
+	font-family: var(--font-heading);
+	font-size: 2rem;
+	margin-bottom: 8px;
+}
+
+.offer__subtitle {
+	font-size: 1rem;
+	color: var(--gray);
+	font-weight: 400;
+}
+
+.offerservices {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+	padding: 24px;
+}
+
+.offerservices__item {
+	text-align: center;
+	padding: 24px;
+	border-radius: 8px;
+	background: var(--gray-light);
+}
+
+.offerservices__item__logo {
+	width: 48px;
+	height: 48px;
+	margin: 0 auto 16px;
+}
+
+.offerservices__item__title {
+	font-family: var(--font-heading);
+	font-size: 1.05rem;
+	margin-bottom: 8px;
+}
+
+.offerservices__item__description {
+	font-size: 0.85rem;
+	font-weight: 400;
+	color: var(--gray);
+}
+
+/* ---------- How it works ---------- */
+.works {
+	text-align: center;
+	padding: 48px 24px;
+	background: var(--gray-light);
+}
+
+.works__title {
+	font-family: var(--font-heading);
+	color: var(--red);
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+}
+
+.works__description {
+	font-family: var(--font-heading);
+	font-size: 2rem;
+	margin-bottom: 32px;
+}
+
+.worksservices {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+
+.works__item {
+	padding: 16px;
+}
+
+.works__item__logo {
+	width: 48px;
+	height: 48px;
+	margin: 0 auto 16px;
+}
+
+.works__item__title {
+	font-family: var(--font-heading);
+	font-size: 1.05rem;
+	margin-bottom: 8px;
+}
+
+.works__item__description {
+	font-size: 0.85rem;
+	font-weight: 400;
+	color: var(--gray);
+}
+
+/* ---------- Ready / CTA ---------- */
+.ready {
+	text-align: center;
+	background: var(--black);
+	color: var(--white);
+	padding: 64px 24px;
+}
+
+.ready__title {
+	font-family: var(--font-heading);
+	font-size: 2rem;
+	margin-bottom: 12px;
+}
+
+.ready__subtitle {
+	font-size: 1rem;
+	font-weight: 400;
+	color: #cccccc;
+	margin-bottom: 24px;
+}
+
+.ready__principal {
+	font-family: var(--font-heading);
+	color: var(--red);
+	font-size: 1.3rem;
+	margin-bottom: 8px;
+}
+
+.ready__principal__subtitle {
+	font-size: 0.95rem;
+	font-weight: 400;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+	background: #111111;
+	color: var(--white);
+	padding: 48px 24px 16px;
+}
+
+.footer__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+
+.footer__title {
+	font-family: var(--font-heading);
+	font-size: 1.2rem;
+	margin-bottom: 12px;
+}
+
+.footer__title-servicios,
+.footer__title-direcccion,
+.footer__title-horario,
+.footer__title-follow {
+	font-family: var(--font-heading);
+	font-size: 0.95rem;
+	color: var(--red);
+	margin-bottom: 12px;
+}
+
+.footer__services {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.footer__service {
+	text-decoration: none;
+	font-size: 0.85rem;
+	color: #cccccc;
+}
+
+.footer__description-direccion,
+.footer__description-horario {
+	font-size: 0.85rem;
+	color: #cccccc;
+	margin-bottom: 12px;
+}
+
+.footer__description-follow {
+	font-size: 0.85rem;
+	color: #cccccc;
+	margin-bottom: 12px;
+}
+
+.footer__link-network {
+	color: var(--white);
+}
+
+.footer__copy {
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #888888;
+	margin-top: 32px;
+}

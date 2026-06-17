@@ -1,0 +1,67 @@
+/* ==========================================================================
+   core.css — variables, resets, and base typography
+   ========================================================================== */
+
+:root {
+	--black: #1a1a1a;
+	--white: #ffffff;
+	--red: #c1272d;
+	--red-dark: #8f1d21;
+	--gray-light: #f4f4f4;
+	--gray: #6b6b6b;
+
+	--font-heading: "Oswald", sans-serif;
+	--font-body: "Source Sans 3", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-body);
+	color: var(--black);
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	color: inherit;
+}
+
+button {
+	font-family: inherit;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.button {
+	display: inline-block;
+	background: var(--red);
+	color: var(--white);
+	font-family: var(--font-heading);
+	letter-spacing: 1px;
+	padding: 14px 32px;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+
+.button:hover {
+	background: var(--red-dark);
+}
