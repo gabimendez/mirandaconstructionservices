@@ -3,12 +3,12 @@
    ========================================================================== */
 
 :root {
-	--black: #1a1a1a;
+	--black: #111111;
 	--white: #ffffff;
 	--red: #c1272d;
-	--red-dark: #8f1d21;
-	--gray-light: #f4f4f4;
-	--gray: #6b6b6b;
+	--red-dark: #d0100f;
+	--gray-light: #C0C0C0;
+	--gray: #4A4A4A;
 
 	--font-heading: "Oswald", sans-serif;
 	--font-body: "Source Sans 3", sans-serif;
